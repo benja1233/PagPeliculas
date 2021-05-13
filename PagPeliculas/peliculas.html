@@ -1,0 +1,173 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>BAMovies</title>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="uikit-3.1.5/css/uikit.min.css" />
+    <link rel="stylesheet" href="uikit-3.1.5/css/uikit.css" />
+    <script src="uikit-3.1.5/js/uikit.min.js"></script>
+    <script src="uikit-3.1.5/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="peliculas.css">
+    <!-- FAVICON -->
+<link rel="apple-touch-icon" sizes="57x57" href="PAGPELI.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="PAGPELI.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="PAGPELI.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="PAGPELI.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="PAGPELI.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="PAGPELI.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="PAGPELI.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="PAGPELI.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="PAGPELI.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="PAGPELI.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="PAGPELI.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="PAGPELI.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="PAGPELI.ico/favicon-16x16.png">
+<link rel="manifest" href="PAGPELI.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="PAGPELI.ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+  <nav class=" uk-margin" uk-navbar>
+      <div class="uk-navbar-left">
+    <a href="home.html">
+    <img class="loguito" src="http://icons.iconarchive.com/icons/evermor-design/entertain-me/256/Movie-Clapper-icon.png" width="130" height="80"alt="">
+    </a>
+
+  <div class="boton-genero">
+      <div class="dropdown">
+          <button class="dropbtn">GÉNEROS
+          <i class="fa fa-caret-down"></i>
+          </button>
+              <div class="dropdown-content generos-drop">
+
+              </div>
+      </div>
+  </div>
+          <ul class="uk-navbar-nav desaparece">
+              <li class="peliculaspreferidas">
+                  <a href="peliculas.html" >
+                      <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
+                      PELICULAS PREFERIDAS
+                  </a>
+              </li>
+          </ul>
+
+          <!-- // boton menu media query -->
+
+                    <button id="altodelmenu" class="uk-button uk-button-default invisible uk-position-right" type="button" uk-toggle="target: #offcanvas-flip">
+                      <img style="width:2.2rem" src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/30-512.png" alt="">
+                    </button>
+
+          <div id="offcanvas-flip" class="" uk-offcanvas="flip: true; overlay: true">
+              <div class="uk-offcanvas-bar">
+
+                  <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                  <ul class="uk-navbar-nav">
+                      <li class="peliculaspreferidas">
+                          <a href="peliculas.html" >
+                              <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
+                              PELICULAS PREFERIDAS
+                          </a>
+                      </li>
+                  </ul>
+
+                  <div class="uk-navbar-left">
+                   <div class="uk-navbar-item itemm">
+                       <form class="uk-search uk-search-navbar buscador" action="busqueda.html" class="buscador" method="get" >
+                           <span uk-search-icon></span>
+                           <input class="uk-search-input text" type="search" name="busqueda" value="" placeholder="Buscar...">
+                       </form>
+                   </div>
+                  </div>
+
+
+
+              </div>
+          </div>
+
+          <!-- // termina menu media query -->
+
+          <div class="uk-navbar-left desaparece">
+           <div class="uk-navbar-item itemm">
+               <form class="uk-search uk-search-navbar buscador" action="busqueda.html" class="buscador" method="get" >
+                   <span uk-search-icon></span>
+                   <input class="uk-search-input text" type="search" name="busqueda" value="" placeholder="Buscar...">
+               </form>
+           </div>
+       </div>
+
+          <ul class="uk-navbar-nav">
+              <li class="login">
+                  <a href="#modal-example" uk-toggle>
+                      <span class="uk-icon uk-margin-small-right" uk-icon=""></span>
+                      LOGIN
+                  </a>
+              </li>
+
+<!-- This is the modal -->
+<div id="modal-example" uk-modal>
+  <div class="uk-modal-dialog uk-modal-body" style="background-color: rgba(0, 0, 0, 0.8)">
+ 					        <h2 class="uk-modal-title" style="color:white">Sign In</h2>
+
+ 									<form class="FORMLOGIN" action="home.html" method="post">
+ 										<div class="uk-inline">
+ 											<span class="uk-form-icon" uk-icon="icon: user"></span>
+ 											<input class="uk-input nombreform" type="text" name="user" value="" placeholder="Nombre">
+ 										</div>
+
+ 										<hr>
+
+ 										<div class="uk-inline">
+ 											<span class="uk-form-icon" uk-icon="icon: mail"></span>
+ 											<input class="uk-input emailform" type="email" name="mail" value="" placeholder="Email">
+ 										</div>
+
+	                  <hr>
+
+                    <div class="uk-inline">
+                      <span class="uk-form-icon" uk-icon="icon: heart"></span>
+                      <input class="uk-input generoform" type="text" name="mail" value="" placeholder="Género">
+                    </div>
+
+ 					        <!-- <p>Cuerpo del Modal... Notese que tanto el boton como el link pueden activar el mismo modal, siempre y cuando el "target" sea el correcto</p> -->
+ 					        <p class="uk-text-right">
+ 					            <!-- <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button> -->
+ 					            <button class="uk-button uk-button-primary" type="submit">Submit</button>
+ 					        </p>
+ 								</form>
+</div>
+          </ul>
+      </div>
+  </nav>
+
+<div class="peliculasprefe">
+
+</div>
+
+
+<footer>
+<div class="logotmdb">
+  <a href="https://www.themoviedb.org/">
+    <img src="https://www.programmableweb.com/sites/default/files/styles/facebook_scale_width_200/public/the-movie-db-api.png?itok=BoZycnJe" width="130" height="150"alt="">
+</a>
+ </div>
+ <a href="#" uk-totop uk-scroll ratio="2"></a>
+<div class="nombres">
+     <h5>Benjamin Sanchez Lopez</h5>
+     <h5>Matias Kahl</h5>
+     <h5>Agustina Castiglioni</h5>
+</div>
+</footer>
+
+
+
+</body>
+
+<script type="text/javascript" src="peliculas.js"> </script>
+
+</html>
